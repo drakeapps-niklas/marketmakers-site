@@ -112,7 +112,7 @@ h1, h2, h3, .nav-logo, .stat-num, .profile-num {
 /* === NAV === */
 #nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 40px; left: 0; right: 0;
   z-index: 100;
   padding: 1.5rem 0;
   transition: background 0.3s ease, padding 0.3s ease, border-bottom 0.3s ease;
@@ -169,6 +169,38 @@ h1, h2, h3, .nav-logo, .stat-num, .profile-num {
 }
 .nav-cta:hover { opacity: 0.85; }
 
+/* === SPONSOR BANNER === */
+#sponsor-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  background: rgba(8, 8, 12, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0.45rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+}
+
+.sponsor-banner-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted-mid);
+}
+
+#sponsor-banner img {
+  height: 26px;
+  width: auto;
+}
+
 /* === HERO === */
 #hero {
   min-height: 100svh;
@@ -176,7 +208,7 @@ h1, h2, h3, .nav-logo, .stat-num, .profile-num {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding: 7rem 2rem 4rem;
+  padding: 9rem 2rem 4rem;
 }
 
 .hero-glow {
@@ -628,7 +660,7 @@ footer p {
 }
 
 @media (max-width: 600px) {
-  #hero { padding: 6rem 1.25rem 5rem; }
+  #hero { padding: 8rem 1.25rem 5rem; }
   .hero-text h1 { font-size: 2.8rem; }
 
   .stats-inner {
